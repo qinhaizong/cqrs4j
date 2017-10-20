@@ -44,7 +44,7 @@
                 <imagedata align="center" fileref="logo.png" width="257px"/>
             </imageobject>
         </mediaobject>
-        <releaseinfo>cqrs4j &version;</releaseinfo>
+        <releaseinfo>cqrs4j</releaseinfo>
         <subjectset>
             <subject>
                 <subjectterm>cqrs4j</subjectterm>

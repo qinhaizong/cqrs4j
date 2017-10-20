@@ -1,5 +1,5 @@
 CQRS for Java
 
-CQRS: Command Query Responsibility Segration
+CQRS: Command-Query Responsibility Segregation
 
 Prototype of AxonFramework.

@@ -32,6 +32,7 @@
             <plugin>
                 <groupId>org.jboss.maven.plugins</groupId>
                 <artifactId>maven-jdocbook-plugin</artifactId>
+                <version>2.1.0</version>
                 <extensions>true</extensions>
                 <executions>
                     <execution>
@@ -135,33 +136,21 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <sourceDocumentName>master.xml</sourceDocumentName>
+                    <sourceDocumentName>en-US/master.xml</sourceDocumentName>
                     <sourceDirectory>${basedir}/src/main/docbook</sourceDirectory>
                     <masterTranslation>en-US</masterTranslation>
                     <imageResource>
                         <directory>${basedir}/src/main/resources/images</directory>
                     </imageResource>
                     <publishDirectory>${basedir}/target</publishDirectory>
-                    <injections>
+                    <!--<injections>
                         <injection>
                             <name>version</name>
-                            <value>${parent.version}</value>
+                            <value>${parent.parent.version}</value>
                         </injection>
-                    </injections>
+                    </injections>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>jboss</id>
-            <name>JBoss Repository</name>
-            <url>http://repository.jboss.com/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>

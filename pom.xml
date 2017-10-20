@@ -186,12 +186,14 @@
         <plugins>
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
@@ -210,24 +212,4 @@
             </extension>
         </extensions>
     </build>
-
-    <!-- deploy and release configuration -->
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>googleCode</id>
-            <url>svn:https://cqrs4j.googlecode.com/svn/repo/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-        <repository>
-            <id>googleCode</id>
-            <url>svn:https://cqrs4j.googlecode.com/svn/repo/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </repository>
-    </distributionManagement>
-    <scm>
-        <connection>scm:svn:http://cqrs4j.googlecode.com/svn/trunk</connection>
-        <developerConnection>scm:svn:https://cqrs4j.googlecode.com/svn/trunk</developerConnection>
-        <url>http://code.google.com/p/cqrs4j/source/browse/</url>
-    </scm>
 </project>
