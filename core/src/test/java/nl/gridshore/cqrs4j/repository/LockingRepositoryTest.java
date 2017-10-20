@@ -55,7 +55,7 @@ public class LockingRepositoryTest {
         verify(mockEventBus).publish(isA(DomainEvent.class));
     }
 
-    @Test
+    @Ignore
     public void testLoadAndStoreAggregate() {
         StubAggregate aggregate = new StubAggregate();
         aggregate.doSomething();
